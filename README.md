@@ -33,3 +33,7 @@ Se admiten alias en español como `VERBO`, `TIPO`, `PASADO SIMPLE`, `PARTICIPIO`
 ## Nota
 
 Los datos base preservan el contenido del PDF proporcionado. La app no corrige automáticamente posibles erratas del documento fuente. Las equivalencias de tiempos en español son orientativas y explican la estructura gramatical.
+
+
+## Pronunciación
+La ficha de cada verbo incluye audio Normal (0.95x) y Lento (0.60x) para las formas verbales y los ejemplos. Puede elegirse inglés estadounidense (`en-US`) o británico (`en-GB`). Se usa Web Speech API (`speechSynthesis`), por lo que la voz concreta depende del navegador y del sistema operativo. El importador admite columnas IPA opcionales.

@@ -3,10 +3,25 @@
   "subtitle": "400 verbos · tiempos · reglas · ejemplos",
   "theme": "dark",
   "defaultPageSize": 24,
-  "searchFields": ["simpleForm", "meaning", "simplePast", "pastParticiple", "gerund"],
+  "searchFields": [
+    "simpleForm",
+    "meaning",
+    "simplePast",
+    "pastParticiple",
+    "gerund"
+  ],
   "excel": {
-    "acceptedExtensions": [".xlsx", ".xls", ".csv"],
-    "requiredAny": ["simpleForm", "verb", "verbo", "simple form"],
+    "acceptedExtensions": [
+      ".xlsx",
+      ".xls",
+      ".csv"
+    ],
+    "requiredAny": [
+      "simpleForm",
+      "verb",
+      "verbo",
+      "simple form"
+    ],
     "headerAliases": {
       "num": "id",
       "id": "id",
@@ -30,7 +45,16 @@
       "meaning": "meaning",
       "significado": "meaning",
       "traduccion": "meaning",
-      "traducción": "meaning"
+      "traducción": "meaning",
+      "ipa": "ipa",
+      "ipa base": "ipaBase",
+      "ipa simple form": "ipaBase",
+      "ipa third person": "ipaThirdPerson",
+      "ipa simple past": "ipaSimplePast",
+      "ipa past participle": "ipaPastParticiple",
+      "ipa gerund": "ipaGerund",
+      "fonetica": "ipa",
+      "fonética": "ipa"
     }
   }
 }
