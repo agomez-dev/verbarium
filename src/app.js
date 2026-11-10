@@ -63,7 +63,7 @@ function render(){
   <div class="result-line"><span><b>${f.length}</b> resultados</span><span>Pasado · Participio · Gerundio</span></div>
   ${visible.length?`<div class="verb-grid">${visible.map(card).join('')}</div>`:`<div class="empty"><span>∅</span><h3>No hay coincidencias</h3><p>Prueba otro término o limpia los filtros activos.</p><button class="secondary" data-action="resetFilters">Limpiar filtros</button></div>`}
   ${tp>1?`<nav class="pagination"><button data-action="prev" ${state.page===1?'disabled':''}>Anterior</button><span>Página <b>${state.page}</b> de ${tp}</span><button data-action="next" ${state.page===tp?'disabled':''}>Siguiente</button></nav>`:''}</section></main>
-  <footer><span>Datos base: listado proporcionado en VERBS.pdf.</span><button data-action="export">Exportar datos actuales como JSON</button></footer></div>`;
+  <footer><span>Alejandro Gómez</span><button data-action="export">Exportar datos actuales como JSON</button></footer></div>`;
   bind();
 }
 function card(v){return `<button class="verb-card" data-verb="${v.id}"><span class="verb-card-top">${badge(v.type)}<span class="verb-id">#${String(v.id).padStart(3,'0')}</span></span><strong>${esc(v.simpleForm)}</strong><span class="meaning">${esc(v.meaning||'Sin traducción')}</span><span class="forms"><span>${esc(v.simplePast||'—')}</span><span>${esc(v.pastParticiple||'—')}</span><span>${esc(v.gerund||'—')}</span></span><span class="open-label">Ver ficha ${icon('chevron',15)}</span></button>`}
